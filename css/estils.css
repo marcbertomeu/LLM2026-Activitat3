@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    font-family: "Times New Roman", serif;
+    font-size: 13px;
+    color: black;
+}
+
+.pagina {
+    width: 80%;
+    margin: 5px auto 0;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+header {
+    height: 50px;
+    background-color: #626262;
+    text-align: center;
+}
+
+.cap-logo {
+    height: 45px;
+    width: auto;
+}
+
+nav {
+    margin-top: 15px;
+    background-color: #626262;
+    text-align: center;
+    padding: 8px;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.article {
+    padding: 1px 12px 10px;
+}
+
+h1 {
+    color: #00658a;
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.columnes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.llista-arcs {
+    flex: 0 0 205px;
+    width: 205px;
+}
+
+.sagues {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.sagues > li {
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
+    color: #008b8b;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.sagues > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icono-cine.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sagues ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: normal;
+}
+
+.sagues ol li {
+    list-style-image: none;
+    margin-bottom: 1px;
+}
+
+.imatges-arcs {
+    flex: 0 0 426px;
+    width: 426px;
+}
+
+.imatges-arcs img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.personatges {
+    padding: 1px 10px 10px;
+}
+
+.personatges h1 {
+    color: #00658a;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu-personatges {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.menu-personatges li {
+    color: #d6a23b;
+    margin-bottom: 1px;
+}
+
+.menu-personatges a {
+    color: #d6a23b;
+    text-decoration: none;
+}
+
+.menu-personatges a:hover {
+    text-decoration: underline;
+}
+
+.fitxa-personatge {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.fitxa-personatge h2 {
+    font-size: 13px;
+    margin: 5px 0 0;
+    color: black;
+}
+
+.fitxa-personatge p {
+    margin: 0 10px 4px 20px;
+    text-align: justify;
+}
+
+.fitxa-personatge img {
+    display: block;
+    width: auto;
+    height: 150px;
+    max-width: 100%;
+    margin: 4px auto 0;
+}
+
+.mes-info {
+    display: block;
+    width: 110px;
+    margin: 0 auto 4px;
+    background-color: #626262;
+    color: #d6a23b;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.mes-info:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background-color: #9b4fba;
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 2px;
+}
+
+.banner img {
+    max-width: 220px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .pagina {
+        width: 96%;
+    }
+
+    .columnes {
+        flex-direction: column;
+    }
+
+    .llista-arcs {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .imatges-arcs {
+        width: 100%;
+        max-width: 650px;
+        flex-basis: auto;
+    }
+
+    .imatges-arcs img {
+        width: 100%;
+    }
+
+    .banner {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .personatges {
+        padding: 8px;
+    }
+
+    .fitxa-personatge p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
